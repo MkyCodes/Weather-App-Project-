@@ -1,0 +1,149 @@
+body {
+    background: #f0f8ff; /* Light powder blue background */
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#app {
+    display: grid;
+    grid-auto-rows: minmax(150px, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: "headline" "form" "entry";
+    padding: 0 15vh;
+    background: #6a0dad; /* Purple background */
+    color: #ffcc00; /* Golden yellow text */
+    justify-content: center;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+@media (min-width: 768px) {
+    #app {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "headline headline" "form entry";
+        height: 100vh;
+    }
+}
+
+.entry {
+    background: rgba(23, 43, 77, 0.7); /* Dark blue with transparency */
+    grid-area: entry;
+    margin-bottom: 30px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+form {
+    grid-area: form;
+    display: grid;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+#entryHolder {
+    padding: 15px;
+}
+
+#date::before {
+    content: "Date : ";
+}
+
+#temp::before {
+    content: "Temperature : ";
+}
+
+#content::before {
+    content: "You're feeling ";
+}
+
+.headline {
+    display: grid;
+    grid-area: headline;
+    align-self: center;
+    justify-content: center;
+}
+
+.title {
+    display: inline-flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+/* Basic Styling To Override Default For Basic HTML Elements */
+
+label {
+    display: block;
+    font-size: 24px;
+    color: #ff1493; /* Deep pink color */
+}
+
+input {
+    display: block;
+    height: 40px;
+    width: 320px;
+    background: #ff6347; /* Tomato red */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid #ffcc00; /* Golden border */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+button {
+    width: 320px;
+    height: 40px;
+    background: #008080; /* Teal */
+    color: #ffffff; /* White text */
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+button.invalid {
+    cursor: not-allowed;
+    background: #dcdcdc; /* Light gray */
+}
+
+h1 {
+    font-size: 36px;
+    color: #ff4500; /* Orange-Red */
+}
+
+textarea {
+    background: #ff6347; /* Tomato red */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+}
+
+/* Reset style for HTML element on active to have no border */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* Style for Placeholder Text */
+
+::placeholder {
+    color: #ffcc00; /* Golden yellow */
+    font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+    color: #ffcc00; /* Golden yellow */
+    font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+    color: #ffcc00; /* Golden yellow */
+    font-family: 'Oswald', sans-serif;
+}

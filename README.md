@@ -1,1 +1,2 @@
-# Weather-App-Project-
+# Weather-Journal-App
+weather journal app project

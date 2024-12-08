@@ -1,0 +1,26 @@
+{
+  "name": "daily-weather-log",
+  "version": "1.0.0",
+  "description": "### Project 3 - Daily Weather Log (Udacity Front-End Web Developer Nanodegree) #### Technologies used: HTML, CSS, Vanilla JavaScript",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MkyCodes/daily-weather-log.git"
+  },
+  "author": "youremail@example.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MkyCodes/daily-weather-log/issues"
+  },
+  "homepage": "https://github.com/MkyCodes/daily-weather-log#readme"
+}
